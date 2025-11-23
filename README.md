@@ -27,7 +27,7 @@ This project hosts an MCP (Model Context Protocol) server designed to ingest rem
 To start the MCP server, run the following command:
 
 ```bash
-uv run src/mcp/server.py
+uv run main.py
 ```
 
 The server will start on `http://0.0.0.0:5000/sse` by default.

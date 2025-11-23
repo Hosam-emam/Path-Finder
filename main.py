@@ -1,14 +1,5 @@
-# def main():
-#     print("Hello from path-finder!")
+from src.mcp.server import mcp
 
-
-# if __name__ == "__main__":
-#     main()
-
-from gitingest import ingest
-
-summary, tree, content = ingest(source="https://github.com/Hosam-emam/Face_Detection_App")
-
-print(summary)
-print(tree)
-print(content)
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(mcp.run(transport='sse'))
